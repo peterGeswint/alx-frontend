@@ -1,0 +1,27 @@
+.btn-outline-light:hover {
+    color: #212529;
+}
+.btn-outline-light:hover {
+    background-color: #f8f9fa;
+}
+.btn-outline-light:hover {
+    border-color: #f8f9fa;
+}
+.btn:hover {
+    color: #212529;
+}
+.btn:hover {
+    text-decoration: none;
+}
+a:hover {
+    color: #117964;
+}
+a:hover {
+    text-decoration: underline;
+}
+.btn-xl {
+    padding: 1rem 1.75rem;
+}
+.btn-xl {
+    font-size: 1.25rem;
+}
