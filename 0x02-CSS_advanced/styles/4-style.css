@@ -10,8 +10,9 @@
 	--font-family-title: "Helvetica Neue", Helvetica, Arial,sans-serif;
 }
 
-/* Apply the base font family to the body */
+
 body {
+	color: var(--text-color);
     font-family: var(--font-family-base);
 }
 
