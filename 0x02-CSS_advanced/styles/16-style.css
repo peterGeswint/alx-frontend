@@ -48,11 +48,6 @@ body {
     line-height: var(--line-height-base);
 }
 
-.container{
-	width: 960px;
-	margin: 0 auto;
-}
-
 /* Apply the title font family to all heading levels */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
@@ -105,4 +100,9 @@ a:active{
 	font-family: var(--font-family-title);
 	text-transform: var(--section-tagline-transform);
 	font-weight: var(--font-weight-bold);
+}
+
+.container{
+	width:960px;
+	margin: 0 auto;
 }
