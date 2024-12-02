@@ -1,95 +1,99 @@
-/* Define custom font-family properties in the root */
+/* Define custom properties for titles, alignment, fonts, weights, and line heights */
 :root {
-		--color-primary: #d73953;
-	--color-black: #090909;
-	--color-white: #ffffff;
-	--color-light-grey: #f3f3f3;
-	--color-dark-grey: #353535;
-	--text-color: var(--color-black);
-	--font-family-base:"Open Sans", "Helvetica Neue",Helvetica, Arial, sans-serif;
-	--font-family-title:"Raleway", "Helvetica Neue", Helvetica, Arial,sans-serif;
-	--font-size-small: 1.2rem;
-	--font-size-medium: 1.6rem;
-	--font-size-large: 1.8rem;
-	--font-size-x-large: 2.3rem;
-	--font-size-xx-large: 4.8rem;
+    --section-header-align: center;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --section-tagline-transform: uppercase;
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
 
-	--font-weight-regular: 400;
-	--font-weight-bold: 700;
-        
-	--line-height-small: 1.2;
-	--line-height-base: 1.5;
-	--line-height-big: 1.8;
-	--section-header-align: center;
-	--section-tagline-transform: uppercase;
-
-	--section-title-margin: 0;
-	--section-title-color: var(--color-black);
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
 }
 
-html{
-	scroll-behavior: smooth;
-	font-size: 62.5%;
+/* Set the font size for the html element */
+html {
+    font-size: 62.5%;
 }
 
+/* Set the font-family, font weight, and line height for the body */
 body {
-	color: var(--text-color);
     font-family: var(--font-family-base);
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-base);
+    color: var(--text-color);
 }
 
-/* Apply the title font family to all heading levels */
+/* Set the font-family and font weight for all section headings (h1 to h6) */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
 }
 
-a{
-	color: var(--text-color);
-	text-decoration: none;
+/* Set the color and text decoration for anchor elements containing hyperlinks */
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
 }
 
-a[href]{
-	text-decoration: none;
+/* Italicize the text for visited links */
+a[href]:visited {
+    font-style: italic;
 }
 
-a:visited{
-	font-style: italic;
+/* Decorate links with an underline when hovering */
+a[href]:hover {
+    text-decoration: underline;
 }
 
-a:hover{
-	text-decoration: underline;
+/* Set the background color for active links */
+a[href]:active {
+    background-color: var(--color-light-grey);
 }
 
-a:active{
-	background-color: var(--color-light-grey);
+/* Hide elements with the class visually-hidden */
+.visually-hidden {
+    display: none;
 }
 
-.visually-hidden{
-	display: none;
+/* Set the color for elements with the class card-category to color-primary */
+.card-category {
+    color: var(--color-primary);
 }
 
-.card-category{
-	color: var(--color-primary);
+/* Set the alignment for elements with the class section-header */
+.section-header {
+    text-align: var(--section-header-align);
 }
 
-.section-header{
-	text-align: var(--section-header-align);
+/* Set the styles for elements with the class section-title */
+.section-title {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
 }
 
-.section-title{
-	font-family: var(--font-family-title);
-	font-size: var(--font-size-xx-large);
-	font-weight: var(--font-weight-bold);
-	color: var(--section-title-color);
-	margin: var(--section-title-margin);
-}
-
-.section-tagline{
-	color: var(--color-primary);
-	font-family: var(--font-family-title);
-	text-transform: var(--section-tagline-transform);
-	font-weight: var(--font-weight-bold);
+/* Set the styles for elements with the class section-tagline */
+.section-tagline {
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
 }
